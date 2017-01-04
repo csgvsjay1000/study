@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/websrv.dir/main.o  -o websrv -rdynamic 
