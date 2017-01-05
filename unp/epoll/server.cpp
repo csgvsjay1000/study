@@ -57,7 +57,8 @@ void run_child(){
 	shared = (struct shared_use_st *)shm;
 
 	while(1){
-		read(fd2[0],&comm,1);
+		int ret = read(fd2[0],&comm,1);
+		printf("ret: %d\n",ret);
 		if(comm == 'e'){
 			exit(-1);
 		}else if(comm == 'c'){
@@ -73,7 +74,6 @@ void run_child(){
 
 
 			}
-			sleep(2);
 			
 		}
 

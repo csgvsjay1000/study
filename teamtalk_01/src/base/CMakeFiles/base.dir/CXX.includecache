@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/feng/study/teamtalk_01/src/base/BaseSocket.cpp
+BaseSocket.h
+/home/feng/study/teamtalk_01/src/base/BaseSocket.h
+
+/home/feng/study/teamtalk_01/src/base/BaseSocket.h
+netlib.h
+/home/feng/study/teamtalk_01/src/base/netlib.h
+
+/home/feng/study/teamtalk_01/src/base/netlib.cpp
+netlib.h
+/home/feng/study/teamtalk_01/src/base/netlib.h
+BaseSocket.h
+/home/feng/study/teamtalk_01/src/base/BaseSocket.h
+
+/home/feng/study/teamtalk_01/src/base/netlib.h
+stdio.h
+-
+stdlib.h
+-
+stdint.h
+-
+
