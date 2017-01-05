@@ -14,7 +14,7 @@ class CBaseSocket{
 		void _SetNonblock(int fd);
 		void _SetReuseAddr(int fd);
 		void _SetNoDelay(int fd);
-			
+		void _SetAddr(const char* ip,const uint16_t port,sockaddr_in *pAddr);			
 
 	private:
 	 	const char *m_local_ip;

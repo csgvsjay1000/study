@@ -15,5 +15,12 @@ int netlib_listen(
 	printf("listen\n");
 	CBaseSocket *pSocket = new CBaseSocket();
 	pSocket->Listen(server_ip,port,callback,callback_data);
+	return 0;
+}
 
+
+int netlib_register_timer(callback_t callback,void* user_data,uint64_t interval){
+	
+
+	return 0;
 }
