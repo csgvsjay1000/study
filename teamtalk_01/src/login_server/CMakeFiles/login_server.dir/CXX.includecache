@@ -13,6 +13,24 @@ stdlib.h
 -
 stdint.h
 -
+sys/socket.h
+-
+fcntl.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+netdb.h
+-
+unistd.h
+-
+string.h
+-
+sys/epoll.h
+-
+ext/hash_map
+-
 
 /home/feng/study/teamtalk_01/src/login_server/login_server.cpp
 stdio.h

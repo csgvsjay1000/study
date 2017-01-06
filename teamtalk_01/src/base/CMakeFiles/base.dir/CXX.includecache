@@ -9,8 +9,20 @@
 /home/feng/study/teamtalk_01/src/base/BaseSocket.cpp
 BaseSocket.h
 /home/feng/study/teamtalk_01/src/base/BaseSocket.h
+EventDispatch.h
+/home/feng/study/teamtalk_01/src/base/EventDispatch.h
 
 /home/feng/study/teamtalk_01/src/base/BaseSocket.h
+netlib.h
+/home/feng/study/teamtalk_01/src/base/netlib.h
+
+/home/feng/study/teamtalk_01/src/base/EventDispatch.cpp
+EventDispatch.h
+/home/feng/study/teamtalk_01/src/base/EventDispatch.h
+BaseSocket.h
+/home/feng/study/teamtalk_01/src/base/BaseSocket.h
+
+/home/feng/study/teamtalk_01/src/base/EventDispatch.h
 netlib.h
 /home/feng/study/teamtalk_01/src/base/netlib.h
 
@@ -19,6 +31,8 @@ netlib.h
 /home/feng/study/teamtalk_01/src/base/netlib.h
 BaseSocket.h
 /home/feng/study/teamtalk_01/src/base/BaseSocket.h
+EventDispatch.h
+/home/feng/study/teamtalk_01/src/base/EventDispatch.h
 
 /home/feng/study/teamtalk_01/src/base/netlib.h
 stdio.h
@@ -26,5 +40,23 @@ stdio.h
 stdlib.h
 -
 stdint.h
+-
+sys/socket.h
+-
+fcntl.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+netdb.h
+-
+unistd.h
+-
+string.h
+-
+sys/epoll.h
+-
+ext/hash_map
 -
 

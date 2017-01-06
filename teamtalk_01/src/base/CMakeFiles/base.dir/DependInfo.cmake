@@ -5,6 +5,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/feng/study/teamtalk_01/src/base/BaseSocket.cpp" "/home/feng/study/teamtalk_01/src/base/CMakeFiles/base.dir/BaseSocket.cpp.o"
+  "/home/feng/study/teamtalk_01/src/base/EventDispatch.cpp" "/home/feng/study/teamtalk_01/src/base/CMakeFiles/base.dir/EventDispatch.cpp.o"
   "/home/feng/study/teamtalk_01/src/base/netlib.cpp" "/home/feng/study/teamtalk_01/src/base/CMakeFiles/base.dir/netlib.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")

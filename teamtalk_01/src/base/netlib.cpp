@@ -1,9 +1,9 @@
 #include "netlib.h"
 #include "BaseSocket.h"
+#include "EventDispatch.h"
 
 int netlib_init(){
 	int ret = 0;
-	printf("helloworld\n");
 	return ret;
 }
 
@@ -12,7 +12,6 @@ int netlib_listen(
 		uint16_t port,
 		callback_t callback,
 		void* callback_data){
-	printf("listen\n");
 	CBaseSocket *pSocket = new CBaseSocket();
 	pSocket->Listen(server_ip,port,callback,callback_data);
 	return 0;
@@ -22,5 +21,22 @@ int netlib_listen(
 int netlib_register_timer(callback_t callback,void* user_data,uint64_t interval){
 	
 
+	return 0;
+}
+
+void netlib_eventloop(uint32_t wait_timeout){
+	CEventDispatch::Instance()->StartDispatch(wait_timeout);
+}
+
+int netlib_option(int handle,int opt,void* optval){
+	CBaseSocket* pSocket = FindBaseSocket(handle);
+	if(!pSocket)
+		return -1;
+	switch(opt){
+		case NETLIB_OPT_SET_CALLBACK:
+			pSocket->SetCallback((callback_t)optval);
+			break;
+
+	}
 	return 0;
 }

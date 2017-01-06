@@ -1,4 +1,7 @@
 #include "EventDispatch.h"
+#include "BaseSocket.h"
+
+CEventDispatch* CEventDispatch::m_pEventDispatch = NULL;
 
 CEventDispatch::CEventDispatch(){
 	m_epfd = epoll_create(1024);
@@ -30,4 +33,28 @@ void CEventDispatch::AddTimer(callback_t callback, void* user_data, uint64_t int
 
 void CEventDispatch::RemoveTimer(callback_t callback, void* user_data){
 
+}
+
+void CEventDispatch::StartDispatch(uint32_t wait_timeout){
+	struct epoll_event events[1024];
+	int nfds = 0;
+	if(running){
+		return;
+	}
+	running = true;
+	while(running){
+		nfds = epoll_wait(m_epfd,events,1024,wait_timeout);
+		for(int i=0;i<nfds;i++){
+			int ev_fd = events[i].data.fd;
+			CBaseSocket *pSocket = FindBaseSocket(ev_fd);
+			if(!pSocket){
+				vrprintf("pSocket == NULL\n");
+				continue;
+			}
+			
+			if(events[i].events & EPOLLIN){
+				pSocket->OnRead();
+			}
+		}
+	}
 }
