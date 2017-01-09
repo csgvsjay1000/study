@@ -2,10 +2,19 @@
 #define __IMCONN_H__
 
 #include "netlib.h"
+#include "UtilPdu.h"
+
+#define READ_BUF_SIZE 2048
 
 class CImConn{
 public:
+	virtual void OnRead();
 
+private:
+	int handle;
+	CSimpleBuffer m_in_buf;
+	CSimpleBuffer m_out_buf;
+	
 };
 
 typedef hash_map<int,CImConn*> ConnMap_t;

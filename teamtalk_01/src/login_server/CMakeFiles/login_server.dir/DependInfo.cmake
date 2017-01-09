@@ -4,6 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
+  "/home/feng/study/teamtalk_01/src/login_server/LoginConn.cpp" "/home/feng/study/teamtalk_01/src/login_server/CMakeFiles/login_server.dir/LoginConn.cpp.o"
   "/home/feng/study/teamtalk_01/src/login_server/login_server.cpp" "/home/feng/study/teamtalk_01/src/login_server/CMakeFiles/login_server.dir/login_server.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")

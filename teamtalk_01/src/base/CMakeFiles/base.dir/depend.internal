@@ -11,6 +11,10 @@ CMakeFiles/base.dir/EventDispatch.cpp.o
  /home/feng/study/teamtalk_01/src/base/EventDispatch.cpp
  /home/feng/study/teamtalk_01/src/base/EventDispatch.h
  /home/feng/study/teamtalk_01/src/base/netlib.h
+CMakeFiles/base.dir/imconn.cpp.o
+ /home/feng/study/teamtalk_01/src/base/imconn.cpp
+ /home/feng/study/teamtalk_01/src/base/imconn.h
+ /home/feng/study/teamtalk_01/src/base/netlib.h
 CMakeFiles/base.dir/netlib.cpp.o
  /home/feng/study/teamtalk_01/src/base/BaseSocket.h
  /home/feng/study/teamtalk_01/src/base/EventDispatch.h

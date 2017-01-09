@@ -111,6 +111,30 @@ login_server/fast:
 	$(MAKE) -f CMakeFiles/login_server.dir/build.make CMakeFiles/login_server.dir/build
 .PHONY : login_server/fast
 
+LoginConn.o: LoginConn.cpp.o
+.PHONY : LoginConn.o
+
+# target to build an object file
+LoginConn.cpp.o:
+	$(MAKE) -f CMakeFiles/login_server.dir/build.make CMakeFiles/login_server.dir/LoginConn.cpp.o
+.PHONY : LoginConn.cpp.o
+
+LoginConn.i: LoginConn.cpp.i
+.PHONY : LoginConn.i
+
+# target to preprocess a source file
+LoginConn.cpp.i:
+	$(MAKE) -f CMakeFiles/login_server.dir/build.make CMakeFiles/login_server.dir/LoginConn.cpp.i
+.PHONY : LoginConn.cpp.i
+
+LoginConn.s: LoginConn.cpp.s
+.PHONY : LoginConn.s
+
+# target to generate assembly for a file
+LoginConn.cpp.s:
+	$(MAKE) -f CMakeFiles/login_server.dir/build.make CMakeFiles/login_server.dir/LoginConn.cpp.s
+.PHONY : LoginConn.cpp.s
+
 login_server.o: login_server.cpp.o
 .PHONY : login_server.o
 
@@ -144,6 +168,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... login_server"
 	@echo "... rebuild_cache"
+	@echo "... LoginConn.o"
+	@echo "... LoginConn.i"
+	@echo "... LoginConn.s"
 	@echo "... login_server.o"
 	@echo "... login_server.i"
 	@echo "... login_server.s"

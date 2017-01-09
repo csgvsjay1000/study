@@ -36,7 +36,17 @@ int netlib_option(int handle,int opt,void* optval){
 		case NETLIB_OPT_SET_CALLBACK:
 			pSocket->SetCallback((callback_t)optval);
 			break;
-
+		case NETLIB_OPT_SET_CALLBACK_DATA:
+			pSocket->SetCallbackData(optval);
+			break;
 	}
 	return 0;
+}
+
+int netlib_recv(int handle,void* buf,int len){
+	CBaseSocket* pSocket = FindBaseSocket(handle);
+	if(!pSocket)
+		return -1;
+	int ret = pSocket->Recv(buf,len);
+	return ret;
 }

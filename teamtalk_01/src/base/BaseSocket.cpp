@@ -2,7 +2,7 @@
 #include "EventDispatch.h"
 
 
-using namespace std;
+
 typedef hash_map<int,CBaseSocket*> SocketMap;
 SocketMap g_socket_map;
 
@@ -113,4 +113,15 @@ void CBaseSocket::OnWrite(){
 }
 void CBaseSocket::OnClose(){
 
+}
+int CBaseSocket::Send(void* buf,int len){
+	int ret = send(m_socket,(char*)buf,len,0);
+	return ret;
+}
+
+int CBaseSocket::Recv(void* buf,int len){
+	return recv(m_socket,(char*)buf,len,0);
+}
+int CBaseSocket::Close(){
+	return 0;
 }

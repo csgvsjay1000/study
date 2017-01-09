@@ -3,7 +3,7 @@
 
 #include "imconn.h"
 
-class CLoginConn{
+class CLoginConn : public CImConn{
 public:
 	void OnConnect2(int handle,int conn_type);
 

@@ -50,8 +50,11 @@ void netlib_eventloop(uint32_t wait_timeout = 100);
 
 int netlib_option(int handle,int opt,void* optval);
 
+int netlib_recv(int handle,void* buf,int len);
+
 #define  vrprintf(fmt, ...) {printf(("%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);}
 
 using namespace __gnu_cxx;
+using namespace std;
 
 #endif

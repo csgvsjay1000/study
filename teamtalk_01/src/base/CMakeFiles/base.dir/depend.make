@@ -11,6 +11,10 @@ CMakeFiles/base.dir/EventDispatch.cpp.o: EventDispatch.cpp
 CMakeFiles/base.dir/EventDispatch.cpp.o: EventDispatch.h
 CMakeFiles/base.dir/EventDispatch.cpp.o: netlib.h
 
+CMakeFiles/base.dir/imconn.cpp.o: imconn.cpp
+CMakeFiles/base.dir/imconn.cpp.o: imconn.h
+CMakeFiles/base.dir/imconn.cpp.o: netlib.h
+
 CMakeFiles/base.dir/netlib.cpp.o: BaseSocket.h
 CMakeFiles/base.dir/netlib.cpp.o: EventDispatch.h
 CMakeFiles/base.dir/netlib.cpp.o: netlib.cpp

@@ -6,33 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/feng/study/teamtalk_01/src/base/BaseSocket.cpp
-BaseSocket.h
-/home/feng/study/teamtalk_01/src/base/BaseSocket.h
-EventDispatch.h
-/home/feng/study/teamtalk_01/src/base/EventDispatch.h
+/home/feng/study/teamtalk_01/src/base/imconn.cpp
+imconn.h
+/home/feng/study/teamtalk_01/src/base/imconn.h
 
-/home/feng/study/teamtalk_01/src/base/BaseSocket.h
+/home/feng/study/teamtalk_01/src/base/imconn.h
 netlib.h
 /home/feng/study/teamtalk_01/src/base/netlib.h
-
-/home/feng/study/teamtalk_01/src/base/EventDispatch.cpp
-EventDispatch.h
-/home/feng/study/teamtalk_01/src/base/EventDispatch.h
-BaseSocket.h
-/home/feng/study/teamtalk_01/src/base/BaseSocket.h
-
-/home/feng/study/teamtalk_01/src/base/EventDispatch.h
-netlib.h
-/home/feng/study/teamtalk_01/src/base/netlib.h
-
-/home/feng/study/teamtalk_01/src/base/netlib.cpp
-netlib.h
-/home/feng/study/teamtalk_01/src/base/netlib.h
-BaseSocket.h
-/home/feng/study/teamtalk_01/src/base/BaseSocket.h
-EventDispatch.h
-/home/feng/study/teamtalk_01/src/base/EventDispatch.h
 
 /home/feng/study/teamtalk_01/src/base/netlib.h
 stdio.h

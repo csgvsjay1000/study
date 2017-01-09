@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../base/imconn.h
+netlib.h
+../base/netlib.h
+
 ../base/netlib.h
 stdio.h
 -
@@ -32,9 +36,19 @@ sys/epoll.h
 ext/hash_map
 -
 
+/home/feng/study/teamtalk_01/src/login_server/LoginConn.cpp
+LoginConn.h
+/home/feng/study/teamtalk_01/src/login_server/LoginConn.h
+
+/home/feng/study/teamtalk_01/src/login_server/LoginConn.h
+imconn.h
+/home/feng/study/teamtalk_01/src/login_server/imconn.h
+
 /home/feng/study/teamtalk_01/src/login_server/login_server.cpp
 stdio.h
 -
 netlib.h
 /home/feng/study/teamtalk_01/src/login_server/netlib.h
+LoginConn.h
+/home/feng/study/teamtalk_01/src/login_server/LoginConn.h
 

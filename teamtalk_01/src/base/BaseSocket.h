@@ -27,7 +27,9 @@ class CBaseSocket{
 				uint16_t port,
 				callback_t callback,
 				void* callback_data);
-
+		int Send(void* buf,int len);
+		int Recv(void* buf,int len);
+		int Close();
 	public:
 		void OnRead();
 		void OnWrite();

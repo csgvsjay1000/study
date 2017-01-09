@@ -49,9 +49,32 @@ include CMakeFiles/base.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/base.dir/flags.make
 
+CMakeFiles/base.dir/imconn.cpp.o: CMakeFiles/base.dir/flags.make
+CMakeFiles/base.dir/imconn.cpp.o: imconn.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_01/src/base/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/imconn.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/imconn.cpp.o -c /home/feng/study/teamtalk_01/src/base/imconn.cpp
+
+CMakeFiles/base.dir/imconn.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/imconn.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/feng/study/teamtalk_01/src/base/imconn.cpp > CMakeFiles/base.dir/imconn.cpp.i
+
+CMakeFiles/base.dir/imconn.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/imconn.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/feng/study/teamtalk_01/src/base/imconn.cpp -o CMakeFiles/base.dir/imconn.cpp.s
+
+CMakeFiles/base.dir/imconn.cpp.o.requires:
+.PHONY : CMakeFiles/base.dir/imconn.cpp.o.requires
+
+CMakeFiles/base.dir/imconn.cpp.o.provides: CMakeFiles/base.dir/imconn.cpp.o.requires
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/imconn.cpp.o.provides.build
+.PHONY : CMakeFiles/base.dir/imconn.cpp.o.provides
+
+CMakeFiles/base.dir/imconn.cpp.o.provides.build: CMakeFiles/base.dir/imconn.cpp.o
+
 CMakeFiles/base.dir/netlib.cpp.o: CMakeFiles/base.dir/flags.make
 CMakeFiles/base.dir/netlib.cpp.o: netlib.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_01/src/base/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_01/src/base/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/netlib.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/netlib.cpp.o -c /home/feng/study/teamtalk_01/src/base/netlib.cpp
 
@@ -74,7 +97,7 @@ CMakeFiles/base.dir/netlib.cpp.o.provides.build: CMakeFiles/base.dir/netlib.cpp.
 
 CMakeFiles/base.dir/BaseSocket.cpp.o: CMakeFiles/base.dir/flags.make
 CMakeFiles/base.dir/BaseSocket.cpp.o: BaseSocket.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_01/src/base/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_01/src/base/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/BaseSocket.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/BaseSocket.cpp.o -c /home/feng/study/teamtalk_01/src/base/BaseSocket.cpp
 
@@ -97,7 +120,7 @@ CMakeFiles/base.dir/BaseSocket.cpp.o.provides.build: CMakeFiles/base.dir/BaseSoc
 
 CMakeFiles/base.dir/EventDispatch.cpp.o: CMakeFiles/base.dir/flags.make
 CMakeFiles/base.dir/EventDispatch.cpp.o: EventDispatch.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_01/src/base/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_01/src/base/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/EventDispatch.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/EventDispatch.cpp.o -c /home/feng/study/teamtalk_01/src/base/EventDispatch.cpp
 
@@ -120,6 +143,7 @@ CMakeFiles/base.dir/EventDispatch.cpp.o.provides.build: CMakeFiles/base.dir/Even
 
 # Object files for target base
 base_OBJECTS = \
+"CMakeFiles/base.dir/imconn.cpp.o" \
 "CMakeFiles/base.dir/netlib.cpp.o" \
 "CMakeFiles/base.dir/BaseSocket.cpp.o" \
 "CMakeFiles/base.dir/EventDispatch.cpp.o"
@@ -127,6 +151,7 @@ base_OBJECTS = \
 # External object files for target base
 base_EXTERNAL_OBJECTS =
 
+libbase.a: CMakeFiles/base.dir/imconn.cpp.o
 libbase.a: CMakeFiles/base.dir/netlib.cpp.o
 libbase.a: CMakeFiles/base.dir/BaseSocket.cpp.o
 libbase.a: CMakeFiles/base.dir/EventDispatch.cpp.o
@@ -140,6 +165,7 @@ libbase.a: CMakeFiles/base.dir/link.txt
 CMakeFiles/base.dir/build: libbase.a
 .PHONY : CMakeFiles/base.dir/build
 
+CMakeFiles/base.dir/requires: CMakeFiles/base.dir/imconn.cpp.o.requires
 CMakeFiles/base.dir/requires: CMakeFiles/base.dir/netlib.cpp.o.requires
 CMakeFiles/base.dir/requires: CMakeFiles/base.dir/BaseSocket.cpp.o.requires
 CMakeFiles/base.dir/requires: CMakeFiles/base.dir/EventDispatch.cpp.o.requires

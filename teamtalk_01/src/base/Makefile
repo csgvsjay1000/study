@@ -159,6 +159,30 @@ EventDispatch.cpp.s:
 	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/EventDispatch.cpp.s
 .PHONY : EventDispatch.cpp.s
 
+imconn.o: imconn.cpp.o
+.PHONY : imconn.o
+
+# target to build an object file
+imconn.cpp.o:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/imconn.cpp.o
+.PHONY : imconn.cpp.o
+
+imconn.i: imconn.cpp.i
+.PHONY : imconn.i
+
+# target to preprocess a source file
+imconn.cpp.i:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/imconn.cpp.i
+.PHONY : imconn.cpp.i
+
+imconn.s: imconn.cpp.s
+.PHONY : imconn.s
+
+# target to generate assembly for a file
+imconn.cpp.s:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/imconn.cpp.s
+.PHONY : imconn.cpp.s
+
 netlib.o: netlib.cpp.o
 .PHONY : netlib.o
 
@@ -198,6 +222,9 @@ help:
 	@echo "... EventDispatch.o"
 	@echo "... EventDispatch.i"
 	@echo "... EventDispatch.s"
+	@echo "... imconn.o"
+	@echo "... imconn.i"
+	@echo "... imconn.s"
 	@echo "... netlib.o"
 	@echo "... netlib.i"
 	@echo "... netlib.s"
