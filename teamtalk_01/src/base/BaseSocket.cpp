@@ -51,6 +51,28 @@ int CBaseSocket::Listen(const char* server_ip, uint16_t port, callback_t callbac
 }
 
 
+int CBaseSocket::Connect(const char* server_ip, uint16_t port, callback_t callback, void* callback_data){
+	vrprintf("server_ip=%s, port=%d \n",server_ip,port);
+	m_remote_ip = server_ip;
+	m_remote_port = port;
+
+	m_callback = callback;
+	m_callback_data = callback_data;
+
+	m_socket = socket(AF_INET,SOCK_STREAM,0);
+	_SetNonblock(m_socket);
+	sockaddr_in server_addr;
+	_SetAddr(server_ip,port,&server_addr);
+	int ret = connect(m_socket,(sockaddr *)&server_addr,sizeof(server_addr));
+	if(ret == -1){
+		close(m_socket);
+	}
+	m_state = SOCKET_STATE_CONNECTING;
+	AddBaseSocket(this);
+	CEventDispatch::Instance()->AddEvent(m_socket,0);
+}
+
+
 void CBaseSocket::_SetNonblock(int fd){
 	fcntl(fd, F_SETFL, O_NONBLOCK | fcntl(fd, F_GETFL));
 }

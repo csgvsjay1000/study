@@ -10,8 +10,8 @@ class CImConn{
 public:
 	virtual void OnRead();
 
-private:
-	int handle;
+protected:
+	int m_handle;
 	CSimpleBuffer m_in_buf;
 	CSimpleBuffer m_out_buf;
 	

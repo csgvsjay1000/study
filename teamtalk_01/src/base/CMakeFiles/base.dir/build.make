@@ -49,9 +49,55 @@ include CMakeFiles/base.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/base.dir/flags.make
 
+CMakeFiles/base.dir/ImPduBase.cpp.o: CMakeFiles/base.dir/flags.make
+CMakeFiles/base.dir/ImPduBase.cpp.o: ImPduBase.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_01/src/base/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/ImPduBase.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/ImPduBase.cpp.o -c /home/feng/study/teamtalk_01/src/base/ImPduBase.cpp
+
+CMakeFiles/base.dir/ImPduBase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/ImPduBase.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/feng/study/teamtalk_01/src/base/ImPduBase.cpp > CMakeFiles/base.dir/ImPduBase.cpp.i
+
+CMakeFiles/base.dir/ImPduBase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/ImPduBase.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/feng/study/teamtalk_01/src/base/ImPduBase.cpp -o CMakeFiles/base.dir/ImPduBase.cpp.s
+
+CMakeFiles/base.dir/ImPduBase.cpp.o.requires:
+.PHONY : CMakeFiles/base.dir/ImPduBase.cpp.o.requires
+
+CMakeFiles/base.dir/ImPduBase.cpp.o.provides: CMakeFiles/base.dir/ImPduBase.cpp.o.requires
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/ImPduBase.cpp.o.provides.build
+.PHONY : CMakeFiles/base.dir/ImPduBase.cpp.o.provides
+
+CMakeFiles/base.dir/ImPduBase.cpp.o.provides.build: CMakeFiles/base.dir/ImPduBase.cpp.o
+
+CMakeFiles/base.dir/UtilPdu.cpp.o: CMakeFiles/base.dir/flags.make
+CMakeFiles/base.dir/UtilPdu.cpp.o: UtilPdu.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_01/src/base/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/UtilPdu.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/UtilPdu.cpp.o -c /home/feng/study/teamtalk_01/src/base/UtilPdu.cpp
+
+CMakeFiles/base.dir/UtilPdu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/UtilPdu.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/feng/study/teamtalk_01/src/base/UtilPdu.cpp > CMakeFiles/base.dir/UtilPdu.cpp.i
+
+CMakeFiles/base.dir/UtilPdu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/UtilPdu.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/feng/study/teamtalk_01/src/base/UtilPdu.cpp -o CMakeFiles/base.dir/UtilPdu.cpp.s
+
+CMakeFiles/base.dir/UtilPdu.cpp.o.requires:
+.PHONY : CMakeFiles/base.dir/UtilPdu.cpp.o.requires
+
+CMakeFiles/base.dir/UtilPdu.cpp.o.provides: CMakeFiles/base.dir/UtilPdu.cpp.o.requires
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/UtilPdu.cpp.o.provides.build
+.PHONY : CMakeFiles/base.dir/UtilPdu.cpp.o.provides
+
+CMakeFiles/base.dir/UtilPdu.cpp.o.provides.build: CMakeFiles/base.dir/UtilPdu.cpp.o
+
 CMakeFiles/base.dir/imconn.cpp.o: CMakeFiles/base.dir/flags.make
 CMakeFiles/base.dir/imconn.cpp.o: imconn.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_01/src/base/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_01/src/base/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/imconn.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/imconn.cpp.o -c /home/feng/study/teamtalk_01/src/base/imconn.cpp
 
@@ -74,7 +120,7 @@ CMakeFiles/base.dir/imconn.cpp.o.provides.build: CMakeFiles/base.dir/imconn.cpp.
 
 CMakeFiles/base.dir/netlib.cpp.o: CMakeFiles/base.dir/flags.make
 CMakeFiles/base.dir/netlib.cpp.o: netlib.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_01/src/base/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_01/src/base/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/netlib.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/netlib.cpp.o -c /home/feng/study/teamtalk_01/src/base/netlib.cpp
 
@@ -97,7 +143,7 @@ CMakeFiles/base.dir/netlib.cpp.o.provides.build: CMakeFiles/base.dir/netlib.cpp.
 
 CMakeFiles/base.dir/BaseSocket.cpp.o: CMakeFiles/base.dir/flags.make
 CMakeFiles/base.dir/BaseSocket.cpp.o: BaseSocket.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_01/src/base/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_01/src/base/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/BaseSocket.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/BaseSocket.cpp.o -c /home/feng/study/teamtalk_01/src/base/BaseSocket.cpp
 
@@ -118,9 +164,32 @@ CMakeFiles/base.dir/BaseSocket.cpp.o.provides: CMakeFiles/base.dir/BaseSocket.cp
 
 CMakeFiles/base.dir/BaseSocket.cpp.o.provides.build: CMakeFiles/base.dir/BaseSocket.cpp.o
 
+CMakeFiles/base.dir/Thread.cpp.o: CMakeFiles/base.dir/flags.make
+CMakeFiles/base.dir/Thread.cpp.o: Thread.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_01/src/base/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/Thread.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/Thread.cpp.o -c /home/feng/study/teamtalk_01/src/base/Thread.cpp
+
+CMakeFiles/base.dir/Thread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/Thread.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/feng/study/teamtalk_01/src/base/Thread.cpp > CMakeFiles/base.dir/Thread.cpp.i
+
+CMakeFiles/base.dir/Thread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/Thread.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/feng/study/teamtalk_01/src/base/Thread.cpp -o CMakeFiles/base.dir/Thread.cpp.s
+
+CMakeFiles/base.dir/Thread.cpp.o.requires:
+.PHONY : CMakeFiles/base.dir/Thread.cpp.o.requires
+
+CMakeFiles/base.dir/Thread.cpp.o.provides: CMakeFiles/base.dir/Thread.cpp.o.requires
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/Thread.cpp.o.provides.build
+.PHONY : CMakeFiles/base.dir/Thread.cpp.o.provides
+
+CMakeFiles/base.dir/Thread.cpp.o.provides.build: CMakeFiles/base.dir/Thread.cpp.o
+
 CMakeFiles/base.dir/EventDispatch.cpp.o: CMakeFiles/base.dir/flags.make
 CMakeFiles/base.dir/EventDispatch.cpp.o: EventDispatch.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_01/src/base/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_01/src/base/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/EventDispatch.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/EventDispatch.cpp.o -c /home/feng/study/teamtalk_01/src/base/EventDispatch.cpp
 
@@ -141,20 +210,76 @@ CMakeFiles/base.dir/EventDispatch.cpp.o.provides: CMakeFiles/base.dir/EventDispa
 
 CMakeFiles/base.dir/EventDispatch.cpp.o.provides.build: CMakeFiles/base.dir/EventDispatch.cpp.o
 
+CMakeFiles/base.dir/pb/protocol/IM.BaseDefine.pb.cc.o: CMakeFiles/base.dir/flags.make
+CMakeFiles/base.dir/pb/protocol/IM.BaseDefine.pb.cc.o: pb/protocol/IM.BaseDefine.pb.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_01/src/base/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/pb/protocol/IM.BaseDefine.pb.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/pb/protocol/IM.BaseDefine.pb.cc.o -c /home/feng/study/teamtalk_01/src/base/pb/protocol/IM.BaseDefine.pb.cc
+
+CMakeFiles/base.dir/pb/protocol/IM.BaseDefine.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/pb/protocol/IM.BaseDefine.pb.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/feng/study/teamtalk_01/src/base/pb/protocol/IM.BaseDefine.pb.cc > CMakeFiles/base.dir/pb/protocol/IM.BaseDefine.pb.cc.i
+
+CMakeFiles/base.dir/pb/protocol/IM.BaseDefine.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/pb/protocol/IM.BaseDefine.pb.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/feng/study/teamtalk_01/src/base/pb/protocol/IM.BaseDefine.pb.cc -o CMakeFiles/base.dir/pb/protocol/IM.BaseDefine.pb.cc.s
+
+CMakeFiles/base.dir/pb/protocol/IM.BaseDefine.pb.cc.o.requires:
+.PHONY : CMakeFiles/base.dir/pb/protocol/IM.BaseDefine.pb.cc.o.requires
+
+CMakeFiles/base.dir/pb/protocol/IM.BaseDefine.pb.cc.o.provides: CMakeFiles/base.dir/pb/protocol/IM.BaseDefine.pb.cc.o.requires
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/pb/protocol/IM.BaseDefine.pb.cc.o.provides.build
+.PHONY : CMakeFiles/base.dir/pb/protocol/IM.BaseDefine.pb.cc.o.provides
+
+CMakeFiles/base.dir/pb/protocol/IM.BaseDefine.pb.cc.o.provides.build: CMakeFiles/base.dir/pb/protocol/IM.BaseDefine.pb.cc.o
+
+CMakeFiles/base.dir/pb/protocol/IM.Login.pb.cc.o: CMakeFiles/base.dir/flags.make
+CMakeFiles/base.dir/pb/protocol/IM.Login.pb.cc.o: pb/protocol/IM.Login.pb.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_01/src/base/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/pb/protocol/IM.Login.pb.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/pb/protocol/IM.Login.pb.cc.o -c /home/feng/study/teamtalk_01/src/base/pb/protocol/IM.Login.pb.cc
+
+CMakeFiles/base.dir/pb/protocol/IM.Login.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/pb/protocol/IM.Login.pb.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/feng/study/teamtalk_01/src/base/pb/protocol/IM.Login.pb.cc > CMakeFiles/base.dir/pb/protocol/IM.Login.pb.cc.i
+
+CMakeFiles/base.dir/pb/protocol/IM.Login.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/pb/protocol/IM.Login.pb.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/feng/study/teamtalk_01/src/base/pb/protocol/IM.Login.pb.cc -o CMakeFiles/base.dir/pb/protocol/IM.Login.pb.cc.s
+
+CMakeFiles/base.dir/pb/protocol/IM.Login.pb.cc.o.requires:
+.PHONY : CMakeFiles/base.dir/pb/protocol/IM.Login.pb.cc.o.requires
+
+CMakeFiles/base.dir/pb/protocol/IM.Login.pb.cc.o.provides: CMakeFiles/base.dir/pb/protocol/IM.Login.pb.cc.o.requires
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/pb/protocol/IM.Login.pb.cc.o.provides.build
+.PHONY : CMakeFiles/base.dir/pb/protocol/IM.Login.pb.cc.o.provides
+
+CMakeFiles/base.dir/pb/protocol/IM.Login.pb.cc.o.provides.build: CMakeFiles/base.dir/pb/protocol/IM.Login.pb.cc.o
+
 # Object files for target base
 base_OBJECTS = \
+"CMakeFiles/base.dir/ImPduBase.cpp.o" \
+"CMakeFiles/base.dir/UtilPdu.cpp.o" \
 "CMakeFiles/base.dir/imconn.cpp.o" \
 "CMakeFiles/base.dir/netlib.cpp.o" \
 "CMakeFiles/base.dir/BaseSocket.cpp.o" \
-"CMakeFiles/base.dir/EventDispatch.cpp.o"
+"CMakeFiles/base.dir/Thread.cpp.o" \
+"CMakeFiles/base.dir/EventDispatch.cpp.o" \
+"CMakeFiles/base.dir/pb/protocol/IM.BaseDefine.pb.cc.o" \
+"CMakeFiles/base.dir/pb/protocol/IM.Login.pb.cc.o"
 
 # External object files for target base
 base_EXTERNAL_OBJECTS =
 
+libbase.a: CMakeFiles/base.dir/ImPduBase.cpp.o
+libbase.a: CMakeFiles/base.dir/UtilPdu.cpp.o
 libbase.a: CMakeFiles/base.dir/imconn.cpp.o
 libbase.a: CMakeFiles/base.dir/netlib.cpp.o
 libbase.a: CMakeFiles/base.dir/BaseSocket.cpp.o
+libbase.a: CMakeFiles/base.dir/Thread.cpp.o
 libbase.a: CMakeFiles/base.dir/EventDispatch.cpp.o
+libbase.a: CMakeFiles/base.dir/pb/protocol/IM.BaseDefine.pb.cc.o
+libbase.a: CMakeFiles/base.dir/pb/protocol/IM.Login.pb.cc.o
 libbase.a: CMakeFiles/base.dir/build.make
 libbase.a: CMakeFiles/base.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library libbase.a"
@@ -165,10 +290,15 @@ libbase.a: CMakeFiles/base.dir/link.txt
 CMakeFiles/base.dir/build: libbase.a
 .PHONY : CMakeFiles/base.dir/build
 
+CMakeFiles/base.dir/requires: CMakeFiles/base.dir/ImPduBase.cpp.o.requires
+CMakeFiles/base.dir/requires: CMakeFiles/base.dir/UtilPdu.cpp.o.requires
 CMakeFiles/base.dir/requires: CMakeFiles/base.dir/imconn.cpp.o.requires
 CMakeFiles/base.dir/requires: CMakeFiles/base.dir/netlib.cpp.o.requires
 CMakeFiles/base.dir/requires: CMakeFiles/base.dir/BaseSocket.cpp.o.requires
+CMakeFiles/base.dir/requires: CMakeFiles/base.dir/Thread.cpp.o.requires
 CMakeFiles/base.dir/requires: CMakeFiles/base.dir/EventDispatch.cpp.o.requires
+CMakeFiles/base.dir/requires: CMakeFiles/base.dir/pb/protocol/IM.BaseDefine.pb.cc.o.requires
+CMakeFiles/base.dir/requires: CMakeFiles/base.dir/pb/protocol/IM.Login.pb.cc.o.requires
 .PHONY : CMakeFiles/base.dir/requires
 
 CMakeFiles/base.dir/clean:

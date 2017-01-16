@@ -1,0 +1,36 @@
+package IM.BaseDefine;
+
+// service id
+enum ServiceID{
+	SID_LOGIN 			= 0x0001; 	// for login
+	SID_BUDDY_LIST 		= 0x0002; 	// for friend list
+	SID_MSG 			= 0x0003;
+	SID_GROUP 			= 0x0004; 	// for group message
+	SID_FILE 			= 0x0005; 	
+	SID_SWITCH_SERVER 	= 0x0006; 	
+	SID_OTHER 			= 0x0007;
+	SID_INTERNAL 		= 0x0008;
+}
+
+// command id for login
+enum LoginCmdID {
+	CID_LOGIN_REQ_MSGSERVER 		= 0x0101;
+	CID_LOGIN_RES_MSGSERVER 		= 0x0102;
+	CID_LOGIN_REQ_USERLOGIN 		= 0x0103;
+	CID_LOGIN_RES_USERLOGIN 		= 0x0104;
+	CID_LOGIN_REQ_LOGINOUT 			= 0x0105;
+	CID_LOGIN_RES_LOGINOUT 			= 0x0106;
+}
+
+enum UserStatType{
+	USER_STATUS_ONLINE 		 = 1;
+	USER_STATUS_OFFLINE		 = 2;
+	USER_STATUS_LEAVE 		 = 3;
+}
+
+enum ClientType{
+	CLIENT_TYPE_WINDOWS 		= 0x01;
+	CLIENT_TYPE_MAC 			= 0x02;
+	CLIENT_TYPE_IOS 			= 0x11;
+	CLIENT_TYPE_ANDROID 		= 0x12;
+}

@@ -1,0 +1,11 @@
+package IM.Login;
+import "IM.BaseDefine.proto";
+
+message IMLoginReq{
+	required string user_name = 1;
+	required string password = 2;
+	required IM.BaseDefine.UserStatType online_status = 3;	
+	required IM.BaseDefine.ClientType client_type = 4;
+	optional string client_version = 5;
+}
+

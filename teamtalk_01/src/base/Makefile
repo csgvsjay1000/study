@@ -159,6 +159,78 @@ EventDispatch.cpp.s:
 	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/EventDispatch.cpp.s
 .PHONY : EventDispatch.cpp.s
 
+ImPduBase.o: ImPduBase.cpp.o
+.PHONY : ImPduBase.o
+
+# target to build an object file
+ImPduBase.cpp.o:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/ImPduBase.cpp.o
+.PHONY : ImPduBase.cpp.o
+
+ImPduBase.i: ImPduBase.cpp.i
+.PHONY : ImPduBase.i
+
+# target to preprocess a source file
+ImPduBase.cpp.i:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/ImPduBase.cpp.i
+.PHONY : ImPduBase.cpp.i
+
+ImPduBase.s: ImPduBase.cpp.s
+.PHONY : ImPduBase.s
+
+# target to generate assembly for a file
+ImPduBase.cpp.s:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/ImPduBase.cpp.s
+.PHONY : ImPduBase.cpp.s
+
+Thread.o: Thread.cpp.o
+.PHONY : Thread.o
+
+# target to build an object file
+Thread.cpp.o:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/Thread.cpp.o
+.PHONY : Thread.cpp.o
+
+Thread.i: Thread.cpp.i
+.PHONY : Thread.i
+
+# target to preprocess a source file
+Thread.cpp.i:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/Thread.cpp.i
+.PHONY : Thread.cpp.i
+
+Thread.s: Thread.cpp.s
+.PHONY : Thread.s
+
+# target to generate assembly for a file
+Thread.cpp.s:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/Thread.cpp.s
+.PHONY : Thread.cpp.s
+
+UtilPdu.o: UtilPdu.cpp.o
+.PHONY : UtilPdu.o
+
+# target to build an object file
+UtilPdu.cpp.o:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/UtilPdu.cpp.o
+.PHONY : UtilPdu.cpp.o
+
+UtilPdu.i: UtilPdu.cpp.i
+.PHONY : UtilPdu.i
+
+# target to preprocess a source file
+UtilPdu.cpp.i:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/UtilPdu.cpp.i
+.PHONY : UtilPdu.cpp.i
+
+UtilPdu.s: UtilPdu.cpp.s
+.PHONY : UtilPdu.s
+
+# target to generate assembly for a file
+UtilPdu.cpp.s:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/UtilPdu.cpp.s
+.PHONY : UtilPdu.cpp.s
+
 imconn.o: imconn.cpp.o
 .PHONY : imconn.o
 
@@ -207,6 +279,54 @@ netlib.cpp.s:
 	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/netlib.cpp.s
 .PHONY : netlib.cpp.s
 
+pb/protocol/IM.BaseDefine.pb.o: pb/protocol/IM.BaseDefine.pb.cc.o
+.PHONY : pb/protocol/IM.BaseDefine.pb.o
+
+# target to build an object file
+pb/protocol/IM.BaseDefine.pb.cc.o:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/pb/protocol/IM.BaseDefine.pb.cc.o
+.PHONY : pb/protocol/IM.BaseDefine.pb.cc.o
+
+pb/protocol/IM.BaseDefine.pb.i: pb/protocol/IM.BaseDefine.pb.cc.i
+.PHONY : pb/protocol/IM.BaseDefine.pb.i
+
+# target to preprocess a source file
+pb/protocol/IM.BaseDefine.pb.cc.i:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/pb/protocol/IM.BaseDefine.pb.cc.i
+.PHONY : pb/protocol/IM.BaseDefine.pb.cc.i
+
+pb/protocol/IM.BaseDefine.pb.s: pb/protocol/IM.BaseDefine.pb.cc.s
+.PHONY : pb/protocol/IM.BaseDefine.pb.s
+
+# target to generate assembly for a file
+pb/protocol/IM.BaseDefine.pb.cc.s:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/pb/protocol/IM.BaseDefine.pb.cc.s
+.PHONY : pb/protocol/IM.BaseDefine.pb.cc.s
+
+pb/protocol/IM.Login.pb.o: pb/protocol/IM.Login.pb.cc.o
+.PHONY : pb/protocol/IM.Login.pb.o
+
+# target to build an object file
+pb/protocol/IM.Login.pb.cc.o:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/pb/protocol/IM.Login.pb.cc.o
+.PHONY : pb/protocol/IM.Login.pb.cc.o
+
+pb/protocol/IM.Login.pb.i: pb/protocol/IM.Login.pb.cc.i
+.PHONY : pb/protocol/IM.Login.pb.i
+
+# target to preprocess a source file
+pb/protocol/IM.Login.pb.cc.i:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/pb/protocol/IM.Login.pb.cc.i
+.PHONY : pb/protocol/IM.Login.pb.cc.i
+
+pb/protocol/IM.Login.pb.s: pb/protocol/IM.Login.pb.cc.s
+.PHONY : pb/protocol/IM.Login.pb.s
+
+# target to generate assembly for a file
+pb/protocol/IM.Login.pb.cc.s:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/pb/protocol/IM.Login.pb.cc.s
+.PHONY : pb/protocol/IM.Login.pb.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,12 +342,27 @@ help:
 	@echo "... EventDispatch.o"
 	@echo "... EventDispatch.i"
 	@echo "... EventDispatch.s"
+	@echo "... ImPduBase.o"
+	@echo "... ImPduBase.i"
+	@echo "... ImPduBase.s"
+	@echo "... Thread.o"
+	@echo "... Thread.i"
+	@echo "... Thread.s"
+	@echo "... UtilPdu.o"
+	@echo "... UtilPdu.i"
+	@echo "... UtilPdu.s"
 	@echo "... imconn.o"
 	@echo "... imconn.i"
 	@echo "... imconn.s"
 	@echo "... netlib.o"
 	@echo "... netlib.i"
 	@echo "... netlib.s"
+	@echo "... pb/protocol/IM.BaseDefine.pb.o"
+	@echo "... pb/protocol/IM.BaseDefine.pb.i"
+	@echo "... pb/protocol/IM.BaseDefine.pb.s"
+	@echo "... pb/protocol/IM.Login.pb.o"
+	@echo "... pb/protocol/IM.Login.pb.i"
+	@echo "... pb/protocol/IM.Login.pb.s"
 .PHONY : help
 
 

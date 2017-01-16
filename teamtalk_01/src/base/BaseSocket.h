@@ -27,6 +27,11 @@ class CBaseSocket{
 				uint16_t port,
 				callback_t callback,
 				void* callback_data);
+		int Connect(
+				const char*charserver_ip, 
+				uint16_t port,
+				callback_t callback,
+				void* callback_data);
 		int Send(void* buf,int len);
 		int Recv(void* buf,int len);
 		int Close();
@@ -47,7 +52,7 @@ class CBaseSocket{
 	private:
 	 	const char *m_local_ip;
 		uint16_t m_local_port;
-		char *m_remote_ip;
+		const char *m_remote_ip;
 		uint16_t m_remote_port;
 
 		callback_t m_callback;

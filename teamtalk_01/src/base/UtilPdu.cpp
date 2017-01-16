@@ -39,3 +39,16 @@ uint32_t CSimpleBuffer::Read(void* buf,uint32_t len){
 	memmove(m_buffer,m_buffer+len,m_write_offset);
 	return len;
 }
+
+
+
+static void WriteInt32(uint8_t* buf,int32_t data){
+	buf[0] = static_cast<uint8_t>(data >> 24);
+	buf[1] = static_cast<uint8_t>((data >> 16) & 0xFF);
+	buf[2] = static_cast<uint8_t>((data >> 8) & 0xFF);
+	buf[3] = static_cast<uint8_t>((data) & 0xFF);
+}
+static void WriteUint16(uint8_t* buf,int16_t data){
+	buf[0] = static_cast<uint8_t>(data >> 8);
+	buf[1] = static_cast<uint8_t>(data & 0xFF);
+}

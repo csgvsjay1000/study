@@ -13,6 +13,7 @@
 #include <string.h>
 #include <sys/epoll.h>
 #include <ext/hash_map>
+#include <string>
 
 #define NETLIB_OPT_SET_CALLBACK 			1
 #define NETLIB_OPT_SET_CALLBACK_DATA 		2
@@ -39,6 +40,12 @@ typedef void (*callback_t)(void* callback_data,uint8_t msg,uint32_t handle,void*
 int netlib_init();
 
 int netlib_listen(
+		const char* server_ip,
+		uint16_t port,
+		callback_t callback,
+		void* callback_data);
+
+int netlib_connect(
 		const char* server_ip,
 		uint16_t port,
 		callback_t callback,

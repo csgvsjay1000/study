@@ -26,7 +26,7 @@ void CImConn::OnRead(){
 		uint32_t free_buf_len = m_in_buf.GetAllocSize() - m_in_buf.GetWriteOffset();
 		if(free_buf_len < READ_BUF_SIZE)
 			m_in_buf.Extend(READ_BUF_SIZE);
-		int ret = netlib_recv(handle,m_in_buf.GetBuffer()+m_in_buf.GetWriteOffset(),READ_BUF_SIZE);
+		int ret = netlib_recv(m_handle,m_in_buf.GetBuffer()+m_in_buf.GetWriteOffset(),READ_BUF_SIZE);
 		if(ret <= 0){
 			break;
 		}

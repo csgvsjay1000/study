@@ -11,7 +11,21 @@ CMakeFiles/base.dir/EventDispatch.cpp.o
  /home/feng/study/teamtalk_01/src/base/EventDispatch.cpp
  /home/feng/study/teamtalk_01/src/base/EventDispatch.h
  /home/feng/study/teamtalk_01/src/base/netlib.h
+CMakeFiles/base.dir/ImPduBase.cpp.o
+ ./pb/protocol/IM.BaseDefine.pb.h
+ /home/feng/study/teamtalk_01/src/base/ImPduBase.cpp
+ /home/feng/study/teamtalk_01/src/base/ImPduBase.h
+ /home/feng/study/teamtalk_01/src/base/UtilPdu.h
+ /home/feng/study/teamtalk_01/src/base/netlib.h
+CMakeFiles/base.dir/Thread.cpp.o
+ /home/feng/study/teamtalk_01/src/base/Thread.cpp
+ /home/feng/study/teamtalk_01/src/base/Thread.h
+CMakeFiles/base.dir/UtilPdu.cpp.o
+ /home/feng/study/teamtalk_01/src/base/UtilPdu.cpp
+ /home/feng/study/teamtalk_01/src/base/UtilPdu.h
+ /home/feng/study/teamtalk_01/src/base/netlib.h
 CMakeFiles/base.dir/imconn.cpp.o
+ /home/feng/study/teamtalk_01/src/base/UtilPdu.h
  /home/feng/study/teamtalk_01/src/base/imconn.cpp
  /home/feng/study/teamtalk_01/src/base/imconn.h
  /home/feng/study/teamtalk_01/src/base/netlib.h
@@ -20,3 +34,10 @@ CMakeFiles/base.dir/netlib.cpp.o
  /home/feng/study/teamtalk_01/src/base/EventDispatch.h
  /home/feng/study/teamtalk_01/src/base/netlib.cpp
  /home/feng/study/teamtalk_01/src/base/netlib.h
+CMakeFiles/base.dir/pb/protocol/IM.BaseDefine.pb.cc.o
+ /home/feng/study/teamtalk_01/src/base/pb/protocol/IM.BaseDefine.pb.cc
+ /home/feng/study/teamtalk_01/src/base/pb/protocol/IM.BaseDefine.pb.h
+CMakeFiles/base.dir/pb/protocol/IM.Login.pb.cc.o
+ /home/feng/study/teamtalk_01/src/base/pb/protocol/IM.BaseDefine.pb.h
+ /home/feng/study/teamtalk_01/src/base/pb/protocol/IM.Login.pb.cc
+ /home/feng/study/teamtalk_01/src/base/pb/protocol/IM.Login.pb.h

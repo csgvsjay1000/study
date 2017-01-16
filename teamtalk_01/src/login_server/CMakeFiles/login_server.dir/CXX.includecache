@@ -6,9 +6,15 @@
 
 #IncludeRegexTransform: 
 
+../base/UtilPdu.h
+netlib.h
+../base/netlib.h
+
 ../base/imconn.h
 netlib.h
 ../base/netlib.h
+UtilPdu.h
+../base/UtilPdu.h
 
 ../base/netlib.h
 stdio.h
@@ -34,6 +40,8 @@ string.h
 sys/epoll.h
 -
 ext/hash_map
+-
+string
 -
 
 /home/feng/study/teamtalk_01/src/login_server/LoginConn.cpp

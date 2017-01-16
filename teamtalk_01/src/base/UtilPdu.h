@@ -24,4 +24,15 @@ private:
 
 };
 
+class CByteStream{
+public:
+	static void WriteInt32(uint8_t* buf,int32_t data);
+	static void WriteUint16(uint8_t* buf,int16_t data);
+private:
+	CSimpleBuffer* 	m_pSimpBuf;
+	uint8_t* 		m_pBuf;
+	uint32_t 		m_len;
+	uint32_t 		m_pos;
+};
+
 #endif
