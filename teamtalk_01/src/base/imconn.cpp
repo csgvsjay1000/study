@@ -1,4 +1,5 @@
 #include "imconn.h"
+#include "ImPduBase.h"
 
 static CImConn* FindImConn(ConnMap_t* imconn_map,int handle){
 	CImConn* pConn = NULL;
@@ -22,6 +23,7 @@ void imconn_callback(void* callback_data,uint8_t msg,uint32_t handle,void* pPara
 
 void CImConn::OnRead(){
 	vrprintf("onRead\n");
+	/*
 	while(1){
 		uint32_t free_buf_len = m_in_buf.GetAllocSize() - m_in_buf.GetWriteOffset();
 		if(free_buf_len < READ_BUF_SIZE)
@@ -31,8 +33,8 @@ void CImConn::OnRead(){
 			break;
 		}
 		m_in_buf.IncWriteOffset(ret);
+	}*/
+	CImPdu* pPdu = NULL;
+	pPdu = CImPdu::ReadPdu(m_in_buf.GetBuffer(),m_in_buf.GetWriteOffset());
 
-
-
-	}
 }

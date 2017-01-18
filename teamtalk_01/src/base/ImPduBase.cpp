@@ -12,18 +12,28 @@ CImPdu::CImPdu(){
 	m_pdu_header.reversed = 0;
 }
 
-bool CImPdu::IsPduAvailable(uint8_t* buf,uint32_t len,uint32_t& pdu_len){
-	
-	return true;
-}
 CImPdu* CImPdu::ReadPdu(uint8_t* buf,uint32_t len){
+	uint32_t pdu_len = 0;
+	if(!IsPduAvailable(buf,len,pdu_len)){
+		return NULL;
+	}
+	uint16_t service_id = CByteStream::ReadUint16(buf+8);
+	uint16_t command_id = CByteStream::ReadUint16(buf+10);
 	
+	vrprintf("service_id %d, command_id %d, \n",service_id,command_id);
 
 
 	return NULL;
 }
+bool CImPdu::IsPduAvailable(uint8_t* buf,uint32_t len,uint32_t& pdu_len){
+	pdu_len = CByteStream::ReadUint32(buf);
+	vrprintf("pdu_len %d\n",pdu_len);
 
-void WriteHeader(){
+	return true;
+}
+
+
+void CImPdu::WriteHeader(){
 	uint8_t* buf = GetBuffer();
 	CByteStream::WriteInt32(buf,m_buf.GetWriteOffset());
 	CByteStream::WriteUint16(buf+4,m_pdu_header.version);

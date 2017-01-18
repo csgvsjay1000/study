@@ -8,4 +8,4 @@ INCLUDE_DIRECTORIES(./ ../base)
 LINK_DIRECTORIES(./ ../base )
 
 ADD_EXECUTABLE(login_server ${SRC_LIST})
-TARGET_LINK_LIBRARIES(login_server base  pthread) 
+TARGET_LINK_LIBRARIES(login_server base  pthread protobuf) 

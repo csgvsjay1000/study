@@ -6,26 +6,6 @@
 
 #IncludeRegexTransform: 
 
-./pb/protocol/IM.BaseDefine.pb.h
-string
--
-google/protobuf/stubs/common.h
--
-google/protobuf/generated_message_util.h
--
-google/protobuf/repeated_field.h
--
-google/protobuf/extension_set.h
--
-google/protobuf/generated_enum_reflection.h
--
-
-/home/feng/study/teamtalk_01/src/base/ImPduBase.cpp
-ImPduBase.h
-/home/feng/study/teamtalk_01/src/base/ImPduBase.h
-IM.BaseDefine.pb.h
-/home/feng/study/teamtalk_01/src/base/IM.BaseDefine.pb.h
-
 /home/feng/study/teamtalk_01/src/base/ImPduBase.h
 UtilPdu.h
 /home/feng/study/teamtalk_01/src/base/UtilPdu.h
@@ -35,6 +15,18 @@ google/protobuf/message_lite.h
 /home/feng/study/teamtalk_01/src/base/UtilPdu.h
 netlib.h
 /home/feng/study/teamtalk_01/src/base/netlib.h
+
+/home/feng/study/teamtalk_01/src/base/imconn.cpp
+imconn.h
+/home/feng/study/teamtalk_01/src/base/imconn.h
+ImPduBase.h
+/home/feng/study/teamtalk_01/src/base/ImPduBase.h
+
+/home/feng/study/teamtalk_01/src/base/imconn.h
+netlib.h
+/home/feng/study/teamtalk_01/src/base/netlib.h
+UtilPdu.h
+/home/feng/study/teamtalk_01/src/base/UtilPdu.h
 
 /home/feng/study/teamtalk_01/src/base/netlib.h
 stdio.h

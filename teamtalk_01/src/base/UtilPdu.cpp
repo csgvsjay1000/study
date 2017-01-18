@@ -42,13 +42,21 @@ uint32_t CSimpleBuffer::Read(void* buf,uint32_t len){
 
 
 
-static void WriteInt32(uint8_t* buf,int32_t data){
+void CByteStream::WriteInt32(uint8_t* buf,int32_t data){
 	buf[0] = static_cast<uint8_t>(data >> 24);
 	buf[1] = static_cast<uint8_t>((data >> 16) & 0xFF);
 	buf[2] = static_cast<uint8_t>((data >> 8) & 0xFF);
 	buf[3] = static_cast<uint8_t>((data) & 0xFF);
 }
-static void WriteUint16(uint8_t* buf,int16_t data){
+void CByteStream::WriteUint16(uint8_t* buf,int16_t data){
 	buf[0] = static_cast<uint8_t>(data >> 8);
 	buf[1] = static_cast<uint8_t>(data & 0xFF);
+}
+uint32_t CByteStream::ReadUint32(uint8_t* buf){
+	uint32_t data = (buf[0]<<24)|(buf[1]<<16)|(buf[2]<<8)|buf[3];
+	return data;
+}
+uint16_t CByteStream::ReadUint16(uint8_t* buf){
+	uint32_t data = (buf[0]<<8)|buf[1];
+	return data;
 }
