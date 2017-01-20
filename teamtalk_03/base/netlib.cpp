@@ -1,5 +1,6 @@
 #include "netlib.h"
 #include "BaseSocket.h"
+#include "EventDispatch.h"
 
 using namespace std;
 
@@ -14,4 +15,8 @@ int netlib_listen(
 	pSocket->Listen(server_ip,port,callback,callback_data);
 	
 	return 0;
+}
+
+void netlib_eventloop(){
+	CEventDispatch::Instance()->StartDispatch();
 }

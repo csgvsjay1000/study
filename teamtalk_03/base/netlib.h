@@ -12,5 +12,6 @@ int netlib_listen(
 		void* callback_data
 		);
 
+void netlib_eventloop();
 
 #endif

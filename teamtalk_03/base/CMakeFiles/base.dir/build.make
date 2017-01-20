@@ -95,16 +95,41 @@ CMakeFiles/base.dir/BaseSocket.cpp.o.provides: CMakeFiles/base.dir/BaseSocket.cp
 
 CMakeFiles/base.dir/BaseSocket.cpp.o.provides.build: CMakeFiles/base.dir/BaseSocket.cpp.o
 
+CMakeFiles/base.dir/EventDispatch.cpp.o: CMakeFiles/base.dir/flags.make
+CMakeFiles/base.dir/EventDispatch.cpp.o: EventDispatch.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_03/base/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/EventDispatch.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/EventDispatch.cpp.o -c /home/feng/study/teamtalk_03/base/EventDispatch.cpp
+
+CMakeFiles/base.dir/EventDispatch.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/EventDispatch.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/feng/study/teamtalk_03/base/EventDispatch.cpp > CMakeFiles/base.dir/EventDispatch.cpp.i
+
+CMakeFiles/base.dir/EventDispatch.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/EventDispatch.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/feng/study/teamtalk_03/base/EventDispatch.cpp -o CMakeFiles/base.dir/EventDispatch.cpp.s
+
+CMakeFiles/base.dir/EventDispatch.cpp.o.requires:
+.PHONY : CMakeFiles/base.dir/EventDispatch.cpp.o.requires
+
+CMakeFiles/base.dir/EventDispatch.cpp.o.provides: CMakeFiles/base.dir/EventDispatch.cpp.o.requires
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/EventDispatch.cpp.o.provides.build
+.PHONY : CMakeFiles/base.dir/EventDispatch.cpp.o.provides
+
+CMakeFiles/base.dir/EventDispatch.cpp.o.provides.build: CMakeFiles/base.dir/EventDispatch.cpp.o
+
 # Object files for target base
 base_OBJECTS = \
 "CMakeFiles/base.dir/netlib.cpp.o" \
-"CMakeFiles/base.dir/BaseSocket.cpp.o"
+"CMakeFiles/base.dir/BaseSocket.cpp.o" \
+"CMakeFiles/base.dir/EventDispatch.cpp.o"
 
 # External object files for target base
 base_EXTERNAL_OBJECTS =
 
 libbase.a: CMakeFiles/base.dir/netlib.cpp.o
 libbase.a: CMakeFiles/base.dir/BaseSocket.cpp.o
+libbase.a: CMakeFiles/base.dir/EventDispatch.cpp.o
 libbase.a: CMakeFiles/base.dir/build.make
 libbase.a: CMakeFiles/base.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library libbase.a"
@@ -117,6 +142,7 @@ CMakeFiles/base.dir/build: libbase.a
 
 CMakeFiles/base.dir/requires: CMakeFiles/base.dir/netlib.cpp.o.requires
 CMakeFiles/base.dir/requires: CMakeFiles/base.dir/BaseSocket.cpp.o.requires
+CMakeFiles/base.dir/requires: CMakeFiles/base.dir/EventDispatch.cpp.o.requires
 .PHONY : CMakeFiles/base.dir/requires
 
 CMakeFiles/base.dir/clean:

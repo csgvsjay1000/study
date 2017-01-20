@@ -3,9 +3,15 @@
 
 CMakeFiles/base.dir/BaseSocket.cpp.o: BaseSocket.cpp
 CMakeFiles/base.dir/BaseSocket.cpp.o: BaseSocket.h
+CMakeFiles/base.dir/BaseSocket.cpp.o: EventDispatch.h
 CMakeFiles/base.dir/BaseSocket.cpp.o: ostype.h
 
+CMakeFiles/base.dir/EventDispatch.cpp.o: EventDispatch.cpp
+CMakeFiles/base.dir/EventDispatch.cpp.o: EventDispatch.h
+CMakeFiles/base.dir/EventDispatch.cpp.o: ostype.h
+
 CMakeFiles/base.dir/netlib.cpp.o: BaseSocket.h
+CMakeFiles/base.dir/netlib.cpp.o: EventDispatch.h
 CMakeFiles/base.dir/netlib.cpp.o: netlib.cpp
 CMakeFiles/base.dir/netlib.cpp.o: netlib.h
 CMakeFiles/base.dir/netlib.cpp.o: ostype.h

@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/feng/study/teamtalk_03/base
 CMakeFiles/base.dir/all:
 	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/depend
 	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_03/base/CMakeFiles  1 2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_03/base/CMakeFiles  1 2 3
 	@echo "Built target base"
 .PHONY : CMakeFiles/base.dir/all
 
@@ -69,7 +69,7 @@ all: CMakeFiles/base.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/base.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/feng/study/teamtalk_03/base/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/feng/study/teamtalk_03/base/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/base.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/feng/study/teamtalk_03/base/CMakeFiles 0
 .PHONY : CMakeFiles/base.dir/rule

@@ -24,6 +24,9 @@ private:
 	string m_local_ip;
 	uint16_t m_local_port;
 
+	string m_remote_ip;
+	uint16_t m_remote_port;
+
 	callback_t 		m_callback;
 	void* 			m_callback_data;
 

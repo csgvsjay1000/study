@@ -135,6 +135,30 @@ BaseSocket.cpp.s:
 	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/BaseSocket.cpp.s
 .PHONY : BaseSocket.cpp.s
 
+EventDispatch.o: EventDispatch.cpp.o
+.PHONY : EventDispatch.o
+
+# target to build an object file
+EventDispatch.cpp.o:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/EventDispatch.cpp.o
+.PHONY : EventDispatch.cpp.o
+
+EventDispatch.i: EventDispatch.cpp.i
+.PHONY : EventDispatch.i
+
+# target to preprocess a source file
+EventDispatch.cpp.i:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/EventDispatch.cpp.i
+.PHONY : EventDispatch.cpp.i
+
+EventDispatch.s: EventDispatch.cpp.s
+.PHONY : EventDispatch.s
+
+# target to generate assembly for a file
+EventDispatch.cpp.s:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/EventDispatch.cpp.s
+.PHONY : EventDispatch.cpp.s
+
 netlib.o: netlib.cpp.o
 .PHONY : netlib.o
 
@@ -171,6 +195,9 @@ help:
 	@echo "... BaseSocket.o"
 	@echo "... BaseSocket.i"
 	@echo "... BaseSocket.s"
+	@echo "... EventDispatch.o"
+	@echo "... EventDispatch.i"
+	@echo "... EventDispatch.s"
 	@echo "... netlib.o"
 	@echo "... netlib.i"
 	@echo "... netlib.s"
