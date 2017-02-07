@@ -26,6 +26,15 @@ int main(){
 		connect_fd = accept(listen_fd,(struct sockaddr *)&client_addr,&addrlen);
 		if(connect_fd == -1)
 			continue;
+		if((pid=fork())>0){
+			close(connect_fd);
+			continue;
+		}else if(pid == 0){
+			close(listen_fd);
+			printf("pid %d process http session from %s : %d\n",getpid(),inet_ntoa(client_addr.sin_addr),htons(client_addr.sin_port));
+			
+		}
+
 		printf("accept\n");
 	}
 
