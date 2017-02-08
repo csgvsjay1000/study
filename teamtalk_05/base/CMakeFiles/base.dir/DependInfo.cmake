@@ -7,8 +7,10 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/feng/study/teamtalk_05/base/BaseSocket.cpp" "/home/feng/study/teamtalk_05/base/CMakeFiles/base.dir/BaseSocket.cpp.o"
   "/home/feng/study/teamtalk_05/base/EventDispatch.cpp" "/home/feng/study/teamtalk_05/base/CMakeFiles/base.dir/EventDispatch.cpp.o"
   "/home/feng/study/teamtalk_05/base/HttpClient.cpp" "/home/feng/study/teamtalk_05/base/CMakeFiles/base.dir/HttpClient.cpp.o"
+  "/home/feng/study/teamtalk_05/base/HttpParserWrapper.cpp" "/home/feng/study/teamtalk_05/base/CMakeFiles/base.dir/HttpParserWrapper.cpp.o"
   "/home/feng/study/teamtalk_05/base/Lock.cpp" "/home/feng/study/teamtalk_05/base/CMakeFiles/base.dir/Lock.cpp.o"
   "/home/feng/study/teamtalk_05/base/UtilPdu.cpp" "/home/feng/study/teamtalk_05/base/CMakeFiles/base.dir/UtilPdu.cpp.o"
+  "/home/feng/study/teamtalk_05/base/http_parser.cpp" "/home/feng/study/teamtalk_05/base/CMakeFiles/base.dir/http_parser.cpp.o"
   "/home/feng/study/teamtalk_05/base/netlib.cpp" "/home/feng/study/teamtalk_05/base/CMakeFiles/base.dir/netlib.cpp.o"
   "/home/feng/study/teamtalk_05/base/util.cpp" "/home/feng/study/teamtalk_05/base/CMakeFiles/base.dir/util.cpp.o"
   )

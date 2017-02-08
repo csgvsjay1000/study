@@ -22,8 +22,7 @@ public:
 	void SetCallback(callback_t callback){m_callback = callback;}
 	void SetCallbackData(void* data){m_callback_data = data;}
 	void SetRemoteIP(char* ip){m_remote_ip=ip;}
-
-
+	void SetRemotePort(uint16_t port){m_remote_port=port;}
 
 public:
 	int Listen(
@@ -32,6 +31,12 @@ public:
 			callback_t 		callback,
 			void* 			callback_data
 			);
+	int Recv(void* buf,int len);
+
+public:
+	void OnRead();
+	void OnWrite();
+	void OnClose();
 
 private:
 	void _SetNonblock(SOCKET fd);

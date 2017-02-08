@@ -183,6 +183,30 @@ HttpClient.cpp.s:
 	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/HttpClient.cpp.s
 .PHONY : HttpClient.cpp.s
 
+HttpParserWrapper.o: HttpParserWrapper.cpp.o
+.PHONY : HttpParserWrapper.o
+
+# target to build an object file
+HttpParserWrapper.cpp.o:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/HttpParserWrapper.cpp.o
+.PHONY : HttpParserWrapper.cpp.o
+
+HttpParserWrapper.i: HttpParserWrapper.cpp.i
+.PHONY : HttpParserWrapper.i
+
+# target to preprocess a source file
+HttpParserWrapper.cpp.i:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/HttpParserWrapper.cpp.i
+.PHONY : HttpParserWrapper.cpp.i
+
+HttpParserWrapper.s: HttpParserWrapper.cpp.s
+.PHONY : HttpParserWrapper.s
+
+# target to generate assembly for a file
+HttpParserWrapper.cpp.s:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/HttpParserWrapper.cpp.s
+.PHONY : HttpParserWrapper.cpp.s
+
 Lock.o: Lock.cpp.o
 .PHONY : Lock.o
 
@@ -230,6 +254,30 @@ UtilPdu.s: UtilPdu.cpp.s
 UtilPdu.cpp.s:
 	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/UtilPdu.cpp.s
 .PHONY : UtilPdu.cpp.s
+
+http_parser.o: http_parser.cpp.o
+.PHONY : http_parser.o
+
+# target to build an object file
+http_parser.cpp.o:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/http_parser.cpp.o
+.PHONY : http_parser.cpp.o
+
+http_parser.i: http_parser.cpp.i
+.PHONY : http_parser.i
+
+# target to preprocess a source file
+http_parser.cpp.i:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/http_parser.cpp.i
+.PHONY : http_parser.cpp.i
+
+http_parser.s: http_parser.cpp.s
+.PHONY : http_parser.s
+
+# target to generate assembly for a file
+http_parser.cpp.s:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/http_parser.cpp.s
+.PHONY : http_parser.cpp.s
 
 netlib.o: netlib.cpp.o
 .PHONY : netlib.o
@@ -297,12 +345,18 @@ help:
 	@echo "... HttpClient.o"
 	@echo "... HttpClient.i"
 	@echo "... HttpClient.s"
+	@echo "... HttpParserWrapper.o"
+	@echo "... HttpParserWrapper.i"
+	@echo "... HttpParserWrapper.s"
 	@echo "... Lock.o"
 	@echo "... Lock.i"
 	@echo "... Lock.s"
 	@echo "... UtilPdu.o"
 	@echo "... UtilPdu.i"
 	@echo "... UtilPdu.s"
+	@echo "... http_parser.o"
+	@echo "... http_parser.i"
+	@echo "... http_parser.s"
 	@echo "... netlib.o"
 	@echo "... netlib.i"
 	@echo "... netlib.s"

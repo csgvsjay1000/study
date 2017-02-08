@@ -26,6 +26,7 @@ typedef int SOCKET;
 
 
 typedef int 		net_handle_t;
+typedef uint8_t 	uchar_t;
 
 enum{
 	NETLIB_OK 		= 0,
@@ -43,5 +44,6 @@ enum {
 };
 
 typedef void (*callback_t)(void* callback_data,uint8_t msg,uint32_t handle,void* pParam);
+#define  vrprintf(fmt, ...) {printf(("%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);}
 
 #endif

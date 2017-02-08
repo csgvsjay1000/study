@@ -16,6 +16,10 @@ CBaseSocket* FindBaseSocket(net_handle_t fd){
 	return pSocket;
 }
 
+void RemoveBaseSocket(CBaseSocket* pSocket){
+	g_socket_map.erase((net_handle_t)pSocket->GetSocket());
+}
+
 int CBaseSocket::Listen(
 		const char* 	server_ip,
 		uint16_t 		port,
@@ -76,8 +80,39 @@ void CBaseSocket::_AcceptNewSocket(){
 		uint16_t port = ntohs(peer_addr.sin_port);
 
 		snprintf(ip_str,sizeof(ip_str),"%d.%d.%d.%d",ip>>24,(ip>>16)&0xFF,(ip>>8)&0xFF,ip&0xFF);
-		printf("AcceptNewSocket,socket=%d from $s:%d\n",fd,ip_str,port);
+		printf("AcceptNewSocket,socket=%d from %s:%d\n",fd,ip_str,port);
 
+		pSocket->SetSocket(fd);
+		pSocket->SetCallback(m_callback);
+		pSocket->SetCallbackData(m_callback_data);
+		pSocket->SetState(SOCKET_STATE_CONNECTED);
+		pSocket->SetRemoteIP(ip_str);
+		pSocket->SetRemotePort(port);
 
+		_SetNonblock(fd);
+		AddBaseSocket(pSocket);
+		CEventDispatch::Instance()->AddEvent(fd,0);
+		m_callback(m_callback_data,NETLIB_MSG_CONNECT,(net_handle_t)fd,NULL);
 	}
+}
+void CBaseSocket::OnRead(){
+	if(m_state == SOCKET_STATE_LISTENING)
+		_AcceptNewSocket();
+	else{
+		uint64_t avail = 0;
+		if((ioctl(m_socket,FIONREAD,&avail)==-1) ||(avail == 0)){
+			m_callback(m_callback_data,NETLIB_MSG_CLOSE,(net_handle_t)m_socket,NULL);
+		}else
+			m_callback(m_callback_data,NETLIB_MSG_READ,(net_handle_t)m_socket,NULL);
+		
+	}
+}
+void CBaseSocket::OnWrite(){}
+void CBaseSocket::OnClose(){
+	vrprintf("OnClose\n");	
+	m_state = SOCKET_STATE_CLOSING;
+	//m_callback(m_callback_data,NETLIB_MSG_CLOSE,(net_handle_t)m_socket,NULL);
+}
+int CBaseSocket::Recv(void* buf,int len){
+	return recv(m_socket,(char*)buf,len,0);
 }

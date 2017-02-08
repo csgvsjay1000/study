@@ -5,6 +5,8 @@
 #include "UtilPdu.h"
 #include <string.h>
 
+uint64_t get_tick_count();
+
 class CRefObject{
 
 public:

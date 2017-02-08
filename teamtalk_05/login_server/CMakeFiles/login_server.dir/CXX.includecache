@@ -6,6 +6,34 @@
 
 #IncludeRegexTransform: 
 
+../base/HttpParserWrapper.h
+util.h
+../base/util.h
+http_parser.h
+../base/http_parser.h
+
+../base/UtilPdu.h
+ostype.h
+../base/ostype.h
+set
+-
+map
+-
+list
+-
+string
+-
+
+../base/http_parser.h
+sys/types.h
+-
+BaseTsd.h
+-
+stddef.h
+-
+stdint.h
+-
+
 ../base/netlib.h
 ostype.h
 ../base/ostype.h
@@ -46,7 +74,31 @@ stdexcept
 ext/hash_map
 -
 
-/home/feng/study/teamtalk_05/login_server/login_server.cpp
+../base/util.h
+ostype.h
+../base/ostype.h
+UtilPdu.h
+../base/UtilPdu.h
+string.h
+-
+
+/home/feng/study/teamtalk_05/login_server/HttpConn.cpp
+HttpConn.h
+/home/feng/study/teamtalk_05/login_server/HttpConn.h
+util.h
+/home/feng/study/teamtalk_05/login_server/util.h
+LoginConn.h
+/home/feng/study/teamtalk_05/login_server/LoginConn.h
+
+/home/feng/study/teamtalk_05/login_server/HttpConn.h
+netlib.h
+/home/feng/study/teamtalk_05/login_server/netlib.h
+UtilPdu.h
+/home/feng/study/teamtalk_05/login_server/UtilPdu.h
+HttpParserWrapper.h
+/home/feng/study/teamtalk_05/login_server/HttpParserWrapper.h
+
+/home/feng/study/teamtalk_05/login_server/LoginConn.h
 netlib.h
 /home/feng/study/teamtalk_05/login_server/netlib.h
 

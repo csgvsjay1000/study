@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/feng/study/teamtalk_05/login_server
 CMakeFiles/login_server.dir/all:
 	$(MAKE) -f CMakeFiles/login_server.dir/build.make CMakeFiles/login_server.dir/depend
 	$(MAKE) -f CMakeFiles/login_server.dir/build.make CMakeFiles/login_server.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_05/login_server/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_05/login_server/CMakeFiles  1 2 3
 	@echo "Built target login_server"
 .PHONY : CMakeFiles/login_server.dir/all
 
@@ -69,7 +69,7 @@ all: CMakeFiles/login_server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/login_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/feng/study/teamtalk_05/login_server/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/feng/study/teamtalk_05/login_server/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/login_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/feng/study/teamtalk_05/login_server/CMakeFiles 0
 .PHONY : CMakeFiles/login_server.dir/rule

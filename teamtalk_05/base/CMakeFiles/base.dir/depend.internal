@@ -21,16 +21,33 @@ CMakeFiles/base.dir/HttpClient.cpp.o
  /home/feng/study/teamtalk_05/base/HttpClient.cpp
  /home/feng/study/teamtalk_05/base/HttpClient.h
  /home/feng/study/teamtalk_05/base/ostype.h
+CMakeFiles/base.dir/HttpParserWrapper.cpp.o
+ /home/feng/study/teamtalk_05/base/HttpParserWrapper.cpp
+ /home/feng/study/teamtalk_05/base/HttpParserWrapper.h
+ /home/feng/study/teamtalk_05/base/UtilPdu.h
+ /home/feng/study/teamtalk_05/base/http_parser.h
+ /home/feng/study/teamtalk_05/base/ostype.h
+ /home/feng/study/teamtalk_05/base/util.h
 CMakeFiles/base.dir/Lock.cpp.o
  /home/feng/study/teamtalk_05/base/Lock.cpp
 CMakeFiles/base.dir/UtilPdu.cpp.o
  /home/feng/study/teamtalk_05/base/UtilPdu.cpp
+ /home/feng/study/teamtalk_05/base/UtilPdu.h
+ /home/feng/study/teamtalk_05/base/ostype.h
+CMakeFiles/base.dir/http_parser.cpp.o
+ /home/feng/study/teamtalk_05/base/http_parser.cpp
+ /home/feng/study/teamtalk_05/base/http_parser.h
 CMakeFiles/base.dir/netlib.cpp.o
  /home/feng/study/teamtalk_05/base/BaseSocket.h
+ /home/feng/study/teamtalk_05/base/EventDispatch.h
+ /home/feng/study/teamtalk_05/base/Lock.h
  /home/feng/study/teamtalk_05/base/UtilPdu.h
  /home/feng/study/teamtalk_05/base/netlib.cpp
  /home/feng/study/teamtalk_05/base/netlib.h
  /home/feng/study/teamtalk_05/base/ostype.h
  /home/feng/study/teamtalk_05/base/util.h
 CMakeFiles/base.dir/util.cpp.o
+ /home/feng/study/teamtalk_05/base/UtilPdu.h
+ /home/feng/study/teamtalk_05/base/ostype.h
  /home/feng/study/teamtalk_05/base/util.cpp
+ /home/feng/study/teamtalk_05/base/util.h

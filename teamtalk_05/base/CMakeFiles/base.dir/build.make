@@ -95,9 +95,32 @@ CMakeFiles/base.dir/Lock.cpp.o.provides: CMakeFiles/base.dir/Lock.cpp.o.requires
 
 CMakeFiles/base.dir/Lock.cpp.o.provides.build: CMakeFiles/base.dir/Lock.cpp.o
 
+CMakeFiles/base.dir/HttpParserWrapper.cpp.o: CMakeFiles/base.dir/flags.make
+CMakeFiles/base.dir/HttpParserWrapper.cpp.o: HttpParserWrapper.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_05/base/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/HttpParserWrapper.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/HttpParserWrapper.cpp.o -c /home/feng/study/teamtalk_05/base/HttpParserWrapper.cpp
+
+CMakeFiles/base.dir/HttpParserWrapper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/HttpParserWrapper.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/feng/study/teamtalk_05/base/HttpParserWrapper.cpp > CMakeFiles/base.dir/HttpParserWrapper.cpp.i
+
+CMakeFiles/base.dir/HttpParserWrapper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/HttpParserWrapper.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/feng/study/teamtalk_05/base/HttpParserWrapper.cpp -o CMakeFiles/base.dir/HttpParserWrapper.cpp.s
+
+CMakeFiles/base.dir/HttpParserWrapper.cpp.o.requires:
+.PHONY : CMakeFiles/base.dir/HttpParserWrapper.cpp.o.requires
+
+CMakeFiles/base.dir/HttpParserWrapper.cpp.o.provides: CMakeFiles/base.dir/HttpParserWrapper.cpp.o.requires
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/HttpParserWrapper.cpp.o.provides.build
+.PHONY : CMakeFiles/base.dir/HttpParserWrapper.cpp.o.provides
+
+CMakeFiles/base.dir/HttpParserWrapper.cpp.o.provides.build: CMakeFiles/base.dir/HttpParserWrapper.cpp.o
+
 CMakeFiles/base.dir/HttpClient.cpp.o: CMakeFiles/base.dir/flags.make
 CMakeFiles/base.dir/HttpClient.cpp.o: HttpClient.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_05/base/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_05/base/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/HttpClient.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/HttpClient.cpp.o -c /home/feng/study/teamtalk_05/base/HttpClient.cpp
 
@@ -120,7 +143,7 @@ CMakeFiles/base.dir/HttpClient.cpp.o.provides.build: CMakeFiles/base.dir/HttpCli
 
 CMakeFiles/base.dir/util.cpp.o: CMakeFiles/base.dir/flags.make
 CMakeFiles/base.dir/util.cpp.o: util.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_05/base/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_05/base/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/util.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/util.cpp.o -c /home/feng/study/teamtalk_05/base/util.cpp
 
@@ -143,7 +166,7 @@ CMakeFiles/base.dir/util.cpp.o.provides.build: CMakeFiles/base.dir/util.cpp.o
 
 CMakeFiles/base.dir/netlib.cpp.o: CMakeFiles/base.dir/flags.make
 CMakeFiles/base.dir/netlib.cpp.o: netlib.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_05/base/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_05/base/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/netlib.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/netlib.cpp.o -c /home/feng/study/teamtalk_05/base/netlib.cpp
 
@@ -164,9 +187,32 @@ CMakeFiles/base.dir/netlib.cpp.o.provides: CMakeFiles/base.dir/netlib.cpp.o.requ
 
 CMakeFiles/base.dir/netlib.cpp.o.provides.build: CMakeFiles/base.dir/netlib.cpp.o
 
+CMakeFiles/base.dir/http_parser.cpp.o: CMakeFiles/base.dir/flags.make
+CMakeFiles/base.dir/http_parser.cpp.o: http_parser.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_05/base/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/http_parser.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/http_parser.cpp.o -c /home/feng/study/teamtalk_05/base/http_parser.cpp
+
+CMakeFiles/base.dir/http_parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/http_parser.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/feng/study/teamtalk_05/base/http_parser.cpp > CMakeFiles/base.dir/http_parser.cpp.i
+
+CMakeFiles/base.dir/http_parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/http_parser.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/feng/study/teamtalk_05/base/http_parser.cpp -o CMakeFiles/base.dir/http_parser.cpp.s
+
+CMakeFiles/base.dir/http_parser.cpp.o.requires:
+.PHONY : CMakeFiles/base.dir/http_parser.cpp.o.requires
+
+CMakeFiles/base.dir/http_parser.cpp.o.provides: CMakeFiles/base.dir/http_parser.cpp.o.requires
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/http_parser.cpp.o.provides.build
+.PHONY : CMakeFiles/base.dir/http_parser.cpp.o.provides
+
+CMakeFiles/base.dir/http_parser.cpp.o.provides.build: CMakeFiles/base.dir/http_parser.cpp.o
+
 CMakeFiles/base.dir/BaseSocket.cpp.o: CMakeFiles/base.dir/flags.make
 CMakeFiles/base.dir/BaseSocket.cpp.o: BaseSocket.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_05/base/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_05/base/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/BaseSocket.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/BaseSocket.cpp.o -c /home/feng/study/teamtalk_05/base/BaseSocket.cpp
 
@@ -189,7 +235,7 @@ CMakeFiles/base.dir/BaseSocket.cpp.o.provides.build: CMakeFiles/base.dir/BaseSoc
 
 CMakeFiles/base.dir/EventDispatch.cpp.o: CMakeFiles/base.dir/flags.make
 CMakeFiles/base.dir/EventDispatch.cpp.o: EventDispatch.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_05/base/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/feng/study/teamtalk_05/base/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/EventDispatch.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/EventDispatch.cpp.o -c /home/feng/study/teamtalk_05/base/EventDispatch.cpp
 
@@ -214,9 +260,11 @@ CMakeFiles/base.dir/EventDispatch.cpp.o.provides.build: CMakeFiles/base.dir/Even
 base_OBJECTS = \
 "CMakeFiles/base.dir/UtilPdu.cpp.o" \
 "CMakeFiles/base.dir/Lock.cpp.o" \
+"CMakeFiles/base.dir/HttpParserWrapper.cpp.o" \
 "CMakeFiles/base.dir/HttpClient.cpp.o" \
 "CMakeFiles/base.dir/util.cpp.o" \
 "CMakeFiles/base.dir/netlib.cpp.o" \
+"CMakeFiles/base.dir/http_parser.cpp.o" \
 "CMakeFiles/base.dir/BaseSocket.cpp.o" \
 "CMakeFiles/base.dir/EventDispatch.cpp.o"
 
@@ -225,9 +273,11 @@ base_EXTERNAL_OBJECTS =
 
 libbase.a: CMakeFiles/base.dir/UtilPdu.cpp.o
 libbase.a: CMakeFiles/base.dir/Lock.cpp.o
+libbase.a: CMakeFiles/base.dir/HttpParserWrapper.cpp.o
 libbase.a: CMakeFiles/base.dir/HttpClient.cpp.o
 libbase.a: CMakeFiles/base.dir/util.cpp.o
 libbase.a: CMakeFiles/base.dir/netlib.cpp.o
+libbase.a: CMakeFiles/base.dir/http_parser.cpp.o
 libbase.a: CMakeFiles/base.dir/BaseSocket.cpp.o
 libbase.a: CMakeFiles/base.dir/EventDispatch.cpp.o
 libbase.a: CMakeFiles/base.dir/build.make
@@ -242,9 +292,11 @@ CMakeFiles/base.dir/build: libbase.a
 
 CMakeFiles/base.dir/requires: CMakeFiles/base.dir/UtilPdu.cpp.o.requires
 CMakeFiles/base.dir/requires: CMakeFiles/base.dir/Lock.cpp.o.requires
+CMakeFiles/base.dir/requires: CMakeFiles/base.dir/HttpParserWrapper.cpp.o.requires
 CMakeFiles/base.dir/requires: CMakeFiles/base.dir/HttpClient.cpp.o.requires
 CMakeFiles/base.dir/requires: CMakeFiles/base.dir/util.cpp.o.requires
 CMakeFiles/base.dir/requires: CMakeFiles/base.dir/netlib.cpp.o.requires
+CMakeFiles/base.dir/requires: CMakeFiles/base.dir/http_parser.cpp.o.requires
 CMakeFiles/base.dir/requires: CMakeFiles/base.dir/BaseSocket.cpp.o.requires
 CMakeFiles/base.dir/requires: CMakeFiles/base.dir/EventDispatch.cpp.o.requires
 .PHONY : CMakeFiles/base.dir/requires
